@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy-950: #111552;
+  --color-navy-900: #1E247E;
+  --color-navy-800: #2A3199;
+  --color-crimson-600: #E11D25;
+  --color-crimson-700: #B91C1C;
+  --color-gold-500: #D4AF37;
+  --color-canvas: #F8FAFC;
+  --color-surface-subtle: #F1F5F9;
+  --color-surface-tint: #EEF2FF;
+  --color-ink-900: #0F172A;
+  --color-ink-700: #334155;
+  --color-ink-500: #475569;
+  --color-border-hairline: #E2E8F0;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-ink-900);
+    background-color: var(--color-canvas);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.shadow-ambient {
+  box-shadow: 0 4px 6px -1px rgba(30, 36, 126, 0.05), 0 12px 24px -4px rgba(30, 36, 126, 0.09);
+}
+
+.shadow-executive-accent {
+  box-shadow: 0 0 0 1.5px #1E247E, 0 10px 24px -4px rgba(30, 36, 126, 0.14);
+}
+
+.focus-ring-brand:focus-visible,
+.input-visa:focus {
+  outline: none;
+  border-color: #1E247E;
+  box-shadow: 0 0 0 3px rgba(30, 36, 126, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

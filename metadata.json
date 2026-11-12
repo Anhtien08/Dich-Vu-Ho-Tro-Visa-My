@@ -1,0 +1,8 @@
+{
+  "name": "Remix Visa5S - Hãy Đến Nơi Nào Bạn Muốn",
+  "description": "Dịch vụ xin visa Mỹ trọn gói tại Visa5S: Visa Du lịch (B2), Visa Công tác (B1), Visa Thăm thân và Gia hạn Visa Mỹ qua đường bưu điện.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
